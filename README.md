@@ -1,13 +1,13 @@
-<h2>Encryptor/Decryptor Demo.</h2>
-This project consists of two Python scripts, encryptor.py and decryptor.py, that can be used to encrypt and decrypt the contents of a folder.
+## Encryptor/Decryptor Demo.
+This project consists of two Python scripts, `encryptor.py` and `decryptor.py`, that can be used to encrypt and decrypt the contents of a folder.
 
-<h2>How to Use.</h2>
-<h3>1. Install Dependencies</h3>
+## How to Use.
+### 1. Install Dependencies
   
     pip install -r requirements.txt
 
-<h3><strong>2. Configure the Scripts<strong><h3>
-<p>Edit the <strong>config.json</strong> file.<p>Sample
+### 2. Configure the Scripts
+Edit the `config.json` file. Sample:
   
     {
       "input_path": "input",
@@ -16,11 +16,11 @@ This project consists of two Python scripts, encryptor.py and decryptor.py, that
       "encrypted_folder": "encrypted",
       "decrypted_folder": "decrypted"    
     }
-<h3>3. Encrypt the Folder</h3>
+
+### 3. Encrypt the Folder
 
     python encryptor.py
 
-<h3>4. Decrypt the Folder</h3>
+### 4. Decrypt the Folder
 
     python decryptor.py
-    
