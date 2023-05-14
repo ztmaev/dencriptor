@@ -1,0 +1,7 @@
+{
+    "input_path": "input",
+    "key_path": "key.txt",
+    "encrypted_extension": "encr",
+    "encrypted_folder": "encrypted",
+    "decrypted_folder": "decrypted"    
+}
