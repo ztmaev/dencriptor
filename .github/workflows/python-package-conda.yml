@@ -18,6 +18,16 @@ jobs:
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
+          # Create environment.yml file
+    - name: Create environment.yml
+      run: |
+        echo "name: base" > environment.yml
+        echo "channels:" >> environment.yml
+        echo "  - conda-forge" >> environment.yml
+        echo "dependencies:" >> environment.yml
+        echo "  - python=3.10" >> environment.yml
+        echo "  - pandas" >> environment.yml
+        echo "  - numpy" >> environment.yml
     - name: Install dependencies
       run: |
         conda env update --file environment.yml --name base
